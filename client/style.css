@@ -2,6 +2,7 @@
   --primary-text-color: #fff;
   --background-color: #24252A;
   --secondary-text-color: #969899;
+  --button-color: #62d3f5;
 }
 
 body {
@@ -12,6 +13,23 @@ body {
   background-color: #34383c;
   margin: 0 auto;
   scroll-behavior: smooth;
+}
+
+.burger {
+  display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burgerInner {
+  width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s linear 0s;
 }
 
 .container {
@@ -51,24 +69,63 @@ header {
   text-decoration: none;
 }
 
+.login {
+  text-align: center;
+  background-color: var(--button-color);
+  color: var(--primary-text-color);
+  border-radius: 3px;
+  border: none;
+  padding: 10px 25px;
+}
+
 h1 {
   color: var(--primary-text-color)
 }
 
 .heroButton {
+  display: flex;
+  flex-direction: column;
 color: var(--primary-text-color);
 width: 100%;
 
 }
 
 .heroButton1 {
-  margin: 16px 0;
-  border-radius: 3px;
-border: none;
-  height: 60px;
   width: 100%;
-  color: var(--primary-text-color);
-  background-color:#62d3f5;
+  background-color: var(--button-color);
+  color: var(--primary-text-color)
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: 'Open Sans', Helvetica, arial, sans-serif;
+  line-height: 1;
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 32px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  border-radius: 3px;
+  border: none;
+  font-size: 14px;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 10px 30px;
+  margin: 10px auto;
 }
 
 .heroBtn {
@@ -94,7 +151,7 @@ border: none;
 .hero p{
   font-size: 16px;
   margin-top: 15px;
-  margin-bottom: 18px;
+  margin-bottom: 28px;
   text-align: center;
   line-height: 1.8;
 }
