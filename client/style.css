@@ -13,6 +13,7 @@ body {
   background-color: #34383c;
   margin: 0 auto;
   scroll-behavior: smooth;
+  line-height: 23px;
 }
 
 .burger {
@@ -38,11 +39,15 @@ body {
 }
 
 .footer {
-  margin-top: 32px;
-  width: 95%;
+  position: relative;
+  width: 100%;
+  display: flex;
   flex-direction: column;
-  padding-top: 32px !important;
-  border-bottom: 0px !important;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: rgb(23, 24, 27);
+  transition: all 0.15s ease-in-out 0s;
+  padding-left: 16px;
 }
 
 .footerInner {
@@ -51,10 +56,53 @@ body {
     flex-direction: column;
 }
 
+.footerOuter {
+  border-bottom: 1px solid rgb(48, 49, 52);
+  align-items: flex-start;
+  padding-top: 64px;
+  margin-bottom: 0px;
+  margin-left: 16px;
+}
+
+.footerCopyText {
+  margin-bottom: 32px;
+  min-width: 300px !important;
+  opacity: 0.48;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  font-size: 16px !important;
+}
+
+.footerFirst {
+  margin-right: 16px;
+  min-width: 250px;
+}
+
 .footerText {
   padding-bottom: 4px;
-  font-size: 16px;
+  font-size: 18px;
   color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+
+.footerTextBlocks {
+  flex-direction: column;
+  min-width: 245px;
+  padding-top: 0px;
+  margin: 16px 32px 32px 0px;
+  width: 100%;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  max-width: 630px;
+  flex: 1 1 0%;
+}
+
+.footerTextBlocksInner {
+  margin-bottom: 16px;
+  width: 160px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero {
@@ -176,6 +224,34 @@ border: none;
   margin-bottom: 28px;
   text-align: center;
   line-height: 1.8;
+}
+
+.navBarActive {
+  max-height: 800px;
+}
+
+.navBarInactive {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 250ms ease-in 0s;
+}
+
+.navBar {
+  list-style: none;
+}
+
+.navText {
+  background-color: rgb(19, 20, 22);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.navTextInner {
+  display: block;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 15px 0px 15px 15px;
 }
 
 section {
