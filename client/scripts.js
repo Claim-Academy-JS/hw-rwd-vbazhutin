@@ -1,0 +1,15 @@
+const nav = document.querySelector('nav')
+const burger1 = document.querySelector('.burgerInner1')
+const burger2 = document.querySelector('.burgerInner2')
+const burger3 = document.querySelector('.burgerInner3')
+
+document.querySelector('.burger').addEventListener('click', event => {
+  nav.classList.toggle('isActive')
+  nav.classList.toggle('isInactive')
+  burger1.classList.toggle('burgerInner1')
+  burger1.classList.toggle('burgerInner1Active')
+  burger2.classList.toggle('burgerInner2')
+  burger2.classList.toggle('burgerInner2Active')
+  burger3.classList.toggle('burgerInner3')
+  burger3.classList.toggle('burgerInner3Active')
+})
